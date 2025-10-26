@@ -1,0 +1,94 @@
+/* 🌿 Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🎮 Title */
+h1 {
+    color: #27ae60; /* Modern green (you can change it below) */
+    margin-top: 40px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 🧱 Game container (holds cards) */
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 80%;
+    margin-top: 50px;
+}
+
+/* 🃏 Game card style */
+.game-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.game-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.game-card h2 {
+    margin: 10px 0;
+    color: #16a085; /* Same green tone */
+}
+
+/* 🪟 Game window page (like guess.html) */
+.game-window {
+    width: 400px;            /* smaller and centered */
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    margin-top: 80px;
+    text-align: center;
+}
+
+button {
+    background-color: #541b90;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #4b0ca3;
+}
+
+/* 🔗 Back to home link */
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #5558e1;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
